@@ -1,5 +1,5 @@
 # MU-domaci
-Ovde cemo raditi domace zadatke iz masinskog ucenja.
+Овде ћемо радити домаће задатке из машинског учења.
 
 :beer:
 
