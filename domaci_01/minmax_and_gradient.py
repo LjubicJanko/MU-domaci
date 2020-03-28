@@ -89,13 +89,13 @@ def predict(test_x, theta):
     return y_pred
 
 if __name__ == '__main__':
-    # if len(sys.argv) != 3:
-    #     print("Bad argument list, enter in following form:")
-    #     print("python <script_name>.py <train_set_path> <test_set_path>")
-    #     exit()
-    #
-    # x, y, test_x, test_y = read(sys.argv[1], sys.argv[2])
-    x, y, test_x, test_y = read('resources/train.csv', 'resources/test_preview.csv')
+    if len(sys.argv) != 3:
+        print("Bad argument list, enter in following form:")
+        print("python <script_name>.py <train_set_path> <test_set_path>")
+        exit()
+
+    x, y, test_x, test_y = read(sys.argv[1], sys.argv[2])
+    # x, y, test_x, test_y = read('resources/train.csv', 'resources/test_preview.csv')
 
     x, y = remove_outliers(x, y)
     theta = fit(x, y)
