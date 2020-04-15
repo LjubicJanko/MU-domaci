@@ -1,0 +1,4 @@
+Prediktovati platu (kolona plata (dolari)) nastavnog osoblja u SAD na osnovu više atributa (zvanje, oblast, godina_doktor, godina_iskustva, pol). Zadatak se smatra uspešno urađenim ukoliko se na kompletnom testnom skupu podataka dobije RMSE (Root Mean Square Error) manji od 28500. Algoritme mašinskog učenja implementirate sami (zabranjena upotreba algoritama iz gotovih biblioteka)!
+
+
+Acceptance criteria: RMSE < 28500.0
