@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/svm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/tekst_zadatka.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_02/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_02/knn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_02/resources/test_preview.csv" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_02/resources/test_preview.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,30 +13,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/tekst_zadatka.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/decoder.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="256" selection-start-line="256" selection-end-line="256" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="151">
+              <caret column="110670" selection-start-column="110658" selection-end-column="110670" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="691" selection-start-column="690" selection-end-column="691" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -54,16 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>X</find>
-      <find>mean_squared_error</find>
-      <find>Y</find>
-      <find>cal_cost</find>
-      <find>cost</find>
-      <find>128250</find>
-      <find>88600</find>
-      <find>140300</find>
-      <find>Prof,A,22,22,Male,140300</find>
-      <find>Prof,B,39,33,Male,128250</find>
       <find>AssocProf,A,41,33,Male,88600</find>
       <find>AssocProf,B,17,6,Male,105000</find>
       <find>Prof,A,25,15,Male,95329</find>
@@ -74,6 +79,26 @@
       <find>''</find>
       <find>serbia</find>
       <find>kosovo</find>
+      <find>},{</find>
+      <find>what</find>
+      <find>_</find>
+      <find>,</find>
+      <find>fascinating'</find>
+      <find>'</find>
+      <find>(</find>
+      <find>+</find>
+      <find>i</find>
+      <find>me</find>
+      <find>me</find>
+      <find>american team</find>
+      <find>drubbing</find>
+      <find>stay home</find>
+      <find>stay</find>
+      <find>once</find>
+      <find>you'll</find>
+      <find>'ll</find>
+      <find>another wins</find>
+      <find>*</find>
     </findStrings>
     <replaceStrings>
       <replace>X</replace>
@@ -108,6 +133,7 @@
         <option value="$PROJECT_DIR$/parsiranjeAktivnosti.py" />
         <option value="$PROJECT_DIR$/food.csv" />
         <option value="$PROJECT_DIR$/domaci_03/tekst_zadatka.txt" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/domaci_03/svm.py" />
       </list>
     </option>
@@ -139,6 +165,12 @@
               <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
               <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
               <item name="domaci_03" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
+              <item name="domaci_03" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,28 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.parsiranjeAktivnosti">
-    <configuration name="brains_manual" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MU-domaci" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_01" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_01/brains_manual.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.svm">
     <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,13 +293,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="svm" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MU-domaci" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_03/svm.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.svm" />
         <item itemvalue="Python.parsiranjeAktivnosti" />
         <item itemvalue="Python.knn" />
         <item itemvalue="Python.scriptica" />
         <item itemvalue="Python.skripta" />
-        <item itemvalue="Python.brains_manual" />
       </list>
     </recent_temporary>
   </component>
@@ -324,8 +356,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3846154" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.6016151" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39328277" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.496208" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -349,59 +381,70 @@
           <line>107</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/domaci_03/svm.py</url>
+          <line>113</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="int(test_x.item(i)*slope + intercept)" />
         <watch expression="votes" />
+        <watch expression="stopword" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>std</expression-string>
+        <expression-string>text[position + len(stopword)]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>data</expression-string>
+        <expression-string>text[position - 1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>col</expression-string>
+        <expression-string>title_objects[-1].text</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>row[col] - mean</expression-string>
+        <expression-string>text[position+len(stopword)+1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>mean</expression-string>
+        <expression-string>text[position+len(stopword)]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>row[col]</expression-string>
+        <expression-string>text[position+1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(row[col] - mean)</expression-string>
+        <expression-string>text[position-1]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>neighbors</expression-string>
+        <expression-string>text[position]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>votes</expression-string>
+        <expression-string>stopword in text</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>text[12]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -414,9 +457,6 @@
           <caret line="537" selection-start-line="537" selection-end-line="537" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/linear_model/ridge.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -623,26 +663,6 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret column="10364" selection-start-column="10358" selection-end-column="10364" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/tekst_zadatka.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -650,8 +670,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="355" column="19" selection-start-line="355" selection-start-column="19" selection-end-line="355" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/json/decoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret column="110670" selection-start-column="110658" selection-end-column="110670" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="691" selection-start-column="690" selection-end-column="691" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
