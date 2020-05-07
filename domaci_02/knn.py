@@ -3,8 +3,6 @@ import pandas
 import scipy.spatial
 import sys
 
-
-
 class KNN:
     def __init__(self, k):
         self.k = k
@@ -94,20 +92,31 @@ def min_max(y):
     return y
 
 
-def normalize_data(data):
-    cols = len(data[0])
+def normalize_data(train, test):
+    cols = len(train[0])
 
     for col in range(cols):
         column_data = []
-        for row in data:
+        for row in train:
             column_data.append(row[col])
         mean = np.mean(column_data)
         std = np.std(column_data) # standardna devijacija
 
-        for row in data:
-            row[col] = (row[col] - mean) / std
+        for row in train:
+            val = row[col] - mean
+            if val == 0:
+                row[col] = val
+            else:
+                row[col] = val / std
+        for row in test:
+            val = row[col] - mean
+            if val == 0:
+                row[col] = val
+            else:
+                row[col] = val / std
 
-    return data
+    return train, test
+
 
 if __name__ == '__main__':
     # if len(sys.argv) != 3:
@@ -116,8 +125,7 @@ if __name__ == '__main__':
     #     exit()
     #
     # train_set, test_set = read(sys.argv[1], sys.argv[2])
-    # train_set, test_set = read("resources/train.csv", "test_skup.csv")
-    train_set, test_set = read("resources/train.csv", "resources/test_preview.csv")
+    train_set, test_set = read("resources/train.csv", "test_skup.csv")
 
 
     X_train = train_set.iloc[:, :-1].values
@@ -125,25 +133,8 @@ if __name__ == '__main__':
     X_test = test_set.iloc[:, :-1].values
     y_test = test_set.iloc[:, 5].values
 
-    X_train = normalize_data(X_train)
-    X_test = normalize_data(X_test)
-
-    # from sklearn.preprocessing import StandardScaler
-    # scaler = StandardScaler()
-    # X_train = scaler.fit_transform(X_train)
-    # X_test = scaler.transform(X_test)
-
-    # rmse_val = []  # to store rmse values for different k
-    # for K in range(50):
-    #     K = K + 1
-    #     model = neighbors.KNeighborsRegressor(n_neighbors=K)
-    #
-    #     model.fit(X_train, y_train)  # fit the model
-    #     pred = model.predict(X_test)  # make prediction on test set
-    #     error = rmse(y_test, pred)  # calculate rmse
-    #     rmse_val.append(error)  # store rmse values
-    #     print('RMSE value for k= ', K, 'is:', error)
-
+    X_train, X_test = normalize_data(X_train, X_test)
+    # X_test = normalize_data(X_test)
 
     min = 10000000
     index = -1
@@ -157,21 +148,3 @@ if __name__ == '__main__':
             index = i
 
     print(min)
-    print(index)
-
-    # from sklearn.neighbors import KNeighborsClassifier
-    #
-    # min = 10000000
-    # index = -1
-    # for i in range(1, 100):
-    #     knn = KNeighborsClassifier(n_neighbors=i, metric='euclidean')
-    #     knn.fit(X_train, y_train)
-    #
-    #     y_pred = knn.predict(X_test)
-    #     rmse_val = rmse(np.array(y_test), np.array(y_pred))
-    #     if rmse_val < min:
-    #         min = rmse_val
-    #         index = i
-    #
-    # print(min)
-    # print(index)

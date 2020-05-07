@@ -1,0 +1,8 @@
+Klasifikovati naslove onlajn medijskih članaka na engleskom jeziku (text) u dve klase (clickbait): 0 - naslov nije klikbejt,
+1 - naslov jeste klikbejt. Zadatak je uspešno urađen ukoliko se na
+kompletnom testnom skupu podataka dobije tačnost (accuracy) veća od 0.89 (89%).
+
+Zadatak se rešava upotrebom SVM klasifikatora.
+
+
+Acceptance criteria: Accuracy > 0.89

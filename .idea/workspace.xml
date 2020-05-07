@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domaci_02/knn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domaci_03/svm.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domaci_03/tekst_zadatka.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_02/tekst_zadatka" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_02/tekst_zadatka" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_02/knn.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_02/knn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_02/resources/test_preview.csv" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_02/resources/test_preview.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,43 +18,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_02/tekst_zadatka">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_02/test_skup.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="1615">
-              <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_02/resources/train.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" selection-start-line="11" selection-start-column="1" selection-end-line="12" selection-end-column="21" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+            <state relative-caret-position="34">
+              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -60,24 +30,17 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/preprocessing/data.py">
+        <entry file="file://$PROJECT_DIR$/domaci_03/tekst_zadatka.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8041">
-              <caret line="497" column="20" selection-start-line="497" selection-start-column="20" selection-end-line="497" selection-end-column="20" />
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_02/resources/test_preview.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -96,7 +59,6 @@
       <find>Y</find>
       <find>cal_cost</find>
       <find>cost</find>
-      <find>&quot;</find>
       <find>128250</find>
       <find>88600</find>
       <find>140300</find>
@@ -105,6 +67,13 @@
       <find>AssocProf,A,41,33,Male,88600</find>
       <find>AssocProf,B,17,6,Male,105000</find>
       <find>Prof,A,25,15,Male,95329</find>
+      <find>min_max</find>
+      <find>import</find>
+      <find>|</find>
+      <find>&quot;</find>
+      <find>''</find>
+      <find>serbia</find>
+      <find>kosovo</find>
     </findStrings>
     <replaceStrings>
       <replace>X</replace>
@@ -129,14 +98,25 @@
         <option value="$PROJECT_DIR$/domaci_02/scriptica.py" />
         <option value="$PROJECT_DIR$/domaci_02/tekst_zadatka" />
         <option value="$PROJECT_DIR$/domaci_02/test_skup.csv" />
+        <option value="$PROJECT_DIR$/domaci_02/resources/test_preview.csv" />
+        <option value="$PROJECT_DIR$/izlaz.csv" />
         <option value="$PROJECT_DIR$/domaci_02/knn.py" />
+        <option value="$PROJECT_DIR$/activities.csv" />
+        <option value="$PROJECT_DIR$/domaci_02/exercise.csv" />
+        <option value="$PROJECT_DIR$/../../Sistemi_Bazirani_Na_Znanju/dataset/food_calories.csv" />
+        <option value="$PROJECT_DIR$/aktivnosti.csv" />
+        <option value="$PROJECT_DIR$/parsiranjeAktivnosti.py" />
+        <option value="$PROJECT_DIR$/food.csv" />
+        <option value="$PROJECT_DIR$/domaci_03/tekst_zadatka.txt" />
+        <option value="$PROJECT_DIR$/domaci_03/svm.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="814" />
-    <option name="height" value="867" />
+    <option name="x" value="1791" />
+    <option name="y" value="-20" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectId" id="1aZzDec8RtWEnU80O4v0x0YndFz" />
   <component name="ProjectLevelVcsManager">
@@ -147,6 +127,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,24 +138,12 @@
             <path>
               <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
               <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
-              <item name="domaci_01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
-              <item name="domaci_02" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
-              <item name="domaci_02" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="domaci_03" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="ProjectViewState">
@@ -190,6 +159,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\FAKS\Semestar_8\Masinsko_Ucenje\MU-domaci\domaci_02" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -202,7 +176,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.knn">
+  <component name="RunManager" selected="Python.parsiranjeAktivnosti">
     <configuration name="brains_manual" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -245,7 +219,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="multiple_regression" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="parsiranjeAktivnosti" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -253,11 +227,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="F:\FAKS\Semestar_8\Masinsko_Ucenje\MU-domaci\domaci_02\knn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parsiranjeAktivnosti.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -310,11 +284,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.parsiranjeAktivnosti" />
         <item itemvalue="Python.knn" />
         <item itemvalue="Python.scriptica" />
         <item itemvalue="Python.skripta" />
         <item itemvalue="Python.brains_manual" />
-        <item itemvalue="Python.multiple_regression" />
       </list>
     </recent_temporary>
   </component>
@@ -342,16 +316,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="1592" y="-7" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15969582" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19178082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3499327" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3846154" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6016151" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -372,13 +346,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/domaci_02/knn.py</url>
-          <line>31</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/domaci_02/knn.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="18" />
+          <line>107</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -392,37 +361,7 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>neighbors</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>votes</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>d</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>pandas.concat([ceo_skup,train_set]).drop_duplicates(keep=False)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>ans</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>train_set</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>data[0]</expression-string>
+        <expression-string>std</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -432,7 +371,37 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.linspace(-10, 1, 6)</expression-string>
+        <expression-string>col</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row[col] - mean</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mean</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>row[col]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(row[col] - mean)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>neighbors</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>votes</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -528,32 +497,20 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/skripta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/skripta.py" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/scriptica.py" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/resources/a.txt" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/ispis.txt" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/ispis.csv" />
+    <entry file="file://$PROJECT_DIR$/../../../aktivnosti.csv" />
+    <entry file="file://$PROJECT_DIR$/domaci_02/resources/test_preview.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/scriptica.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/resources/a.txt">
-      <provider editor-type-id="csv-text-editor" />
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/ispis.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="19" lean-forward="true" selection-end-line="397" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domaci_02/tekst_zadatka">
@@ -565,8 +522,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/domaci_02/test_skup.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="1615">
-          <caret line="95" column="25" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="25" />
+        <state relative-caret-position="1649">
+          <caret line="97" column="24" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
@@ -590,20 +547,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/resources/test_preview.csv">
+    <entry file="file://$PROJECT_DIR$/domaci_02/exercise.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="2516">
+          <caret line="148" column="28" selection-start-line="148" selection-start-column="28" selection-end-line="148" selection-end-column="28" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_02/ispis.csv">
+    <entry file="file://$PROJECT_DIR$/activities.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="6664">
-          <caret line="392" column="24" selection-start-line="392" selection-start-column="24" selection-end-line="394" selection-end-column="24" />
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Sistemi_Bazirani_Na_Znanju/dataset/NutritionalFacts_Fruit_Vegetables_Seafood.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../Sistemi_Bazirani_Na_Znanju/dataset/food_calories.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-end-line="1134" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_02/food.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" lean-forward="true" selection-end-line="1134" selection-end-column="55" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/izlaz.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-end-line="150" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parsiranjeAktivnosti.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/food.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="178">
+          <caret line="1061" column="41" selection-end-line="1134" selection-end-column="55" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
@@ -612,13 +625,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="56" column="16" lean-forward="true" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+        <state relative-caret-position="34">
+          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret column="10364" selection-start-column="10358" selection-end-column="10364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/tekst_zadatka.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
