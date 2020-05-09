@@ -93,56 +93,89 @@ def remove_stopwords(text):
 
     return text
 
-def text_preprocessing(fileName):
+def text_preprocessing(fileName, isTraining):
+    naslovi = []
+    clickbates = []
     with open(fileName) as train_json:
         titles = train_json.read().split("},{")
         first_line = True
-        title_objects = []
         for title in titles:
             # removing keyword
             if first_line:
-                title = title[14:]
+                if isTraining:
+                    title = title[15:]
+                else:
+                    title = title[14:]
                 first_line = False
             else:
-                title = title[12:]
-
+                if isTraining:
+                    title = title[13:]
+                else:
+                    title = title[12:]
             clickbait = title[0]
 
-            lower_title_text = title[10:-1].lower()
-            text = remove_stopwords(lower_title_text)
+            if isTraining:
+                naslov = title[11:-1].lower()
+            else:
+                naslov = title[10:-1].lower()
+            text = remove_stopwords(naslov)
             text = remove_interpunction(text)
-            title_objects.append(Title(text, clickbait))
 
-        title_objects[-1].text = title_objects[-1].text[:-2]
+            naslovi.append(text)
+            clickbates.append(clickbait)
 
-    # for t in title_objects:
-        # print(t.clickbait)
-        # print(t.text)
+    naslovi[-1] = naslovi[-1][:-2]
 
-    X_train = []
-    Y_train = []
-    for title in title_objects:
-        X_train.append(title.text)
-        Y_train.append(title.clickbait)
+    # for naslov in naslovi:
+    #     print(naslov)
 
-    return X_train, Y_train
+    return naslovi, clickbates
 
+# def text_preprocessing(fileName):
+#     with open(fileName) as train_json:
+#         titles = train_json.read().split("},{")
+#         first_line = True
+#         title_objects = []
+#         for title in titles:
+#             # removing keyword
+#             if first_line:
+#                 title = title[14:]
+#                 first_line = False
+#             else:
+#                 title = title[12:]
+#
+#             clickbait = title[0]
+#
+#             lower_title_text = title[10:-1].lower()
+#             text = remove_stopwords(lower_title_text)
+#             text = remove_interpunction(text)
+#             title_objects.append(Title(text, clickbait))
+#
+#         title_objects[-1].text = title_objects[-1].text[:-2]
+#
+#     for t in title_objects:
+#         print(t.clickbait)
+#         print(t.text)
+#
+#     X_train = []
+#     Y_train = []
+#     for title in title_objects:
+#         X_train.append(title.text)
+#         # Y_train.append(title.clickbait)
+#
+#     return X_train, Y_train
 
 def vectorisation(training, test):
 
     vectorizer = TfidfVectorizer()
     vector_training = vectorizer.fit_transform(training)
     vector_test = vectorizer.transform(test)
-
-    # print(vectorizer.vocabulary_)
-    # print(vector_training.toarray())
-    # print(vector_test.toarray())
     return vector_training.toarray(), vector_test.toarray()
 
-
 if __name__ == '__main__':
-    X_train, Y_train = text_preprocessing('resources/train.json')
-    X_test, Y_test  = text_preprocessing('resources/preview.json')
+    X_train, Y_train = text_preprocessing('resources/train.json', True)
+    # X_test, Y_test  = text_preprocessing('resources/preview.json', False)
+    X_test, Y_test  = text_preprocessing('whole_test.json', True)
 
     X_train, X_test = vectorisation(X_train, X_test)
 

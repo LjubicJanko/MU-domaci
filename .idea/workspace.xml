@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_01.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_02.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_03.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_04.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_05.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_06.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_07.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/data_08.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/skripta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_03/sve.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_01.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_02.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_03.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_04.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_05.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_06.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_07.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/data_08.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/resources/train.json" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/resources/train.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_03/skripta.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/skripta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domaci_03/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,14 +24,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#5076#5111#0" />
+                <element signature="e#5457#5760#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domaci_03/whole_test.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2676">
+              <caret column="103713" selection-start-column="103713" selection-end-column="103713" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domaci_03/skripta.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+            <state relative-caret-position="119">
+              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <element signature="e#795#838#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret column="1287" selection-start-column="1287" selection-end-column="1287" />
             </state>
           </provider>
         </entry>
@@ -38,80 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domaci_03/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret column="860729" lean-forward="true" selection-start-column="747289" selection-end-column="860729" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_08.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_07.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_06.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_05.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_04.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="67" selection-start-column="67" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_03.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2" selection-start-column="2" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_02.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1" selection-start-column="1" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_03/data_01.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="150090" selection-start-column="150090" selection-end-column="150090" />
+            <state relative-caret-position="160">
+              <caret column="181236" selection-start-column="181181" selection-end-column="181236" />
             </state>
           </provider>
         </entry>
@@ -127,41 +89,48 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>serbia</find>
-      <find>kosovo</find>
-      <find>},{</find>
-      <find>what</find>
-      <find>_</find>
-      <find>,</find>
-      <find>fascinating'</find>
-      <find>'</find>
-      <find>(</find>
-      <find>+</find>
-      <find>i</find>
-      <find>me</find>
-      <find>american team</find>
-      <find>drubbing</find>
-      <find>stay home</find>
-      <find>stay</find>
-      <find>once</find>
-      <find>you'll</find>
-      <find>'ll</find>
-      <find>another wins</find>
-      <find>*</find>
-      <find>spell</find>
-      <find>guess</find>
-      <find>&quot;</find>
       <find>here'</find>
       <find>president</find>
       <find>horror</find>
-      <find>Egypt's top envoy in Iraq confirmed killed</find>
       <find>^</find>
       <find>Eyes&quot;</find>
+      <find>kosovo</find>
+      <find>After Years Of Dutiful Service, The Shiba Who Ran A Tobacco Shop Retires</find>
+      <find>as tamil rebels lose ground in sri lanka</find>
+      <find>egypt\'s top envoy</find>
+      <find>Egypt</find>
+      <find>Egypt\'s top envoy in Iraq confirmed killed</find>
+      <find>Egypt's top envoy in Iraq confirmed killed</find>
+      <find>Which Belle And Sebastian Album Should You Listen To Right Now</find>
+      <find>hich</find>
+      <find>Which</find>
+      <find>1&quot;, &quot;</find>
+      <find>Indiana businessman held hostage in Iraq</find>
+      <find>0&quot;, &quot;</find>
+      <find>kbait&quot;: &quot;</find>
+      <find>&quot;}, {</find>
+      <find>&quot;text&quot;: &quot;</find>
+      <find>t&quot;: &quot;E</find>
+      <find>National Park Service covers donation box at United Airlines Flight 93 memorial</find>
+      <find>clickbait&quot;:0</find>
+      <find>UK New Year's Day murder suspect jumps from seventh floor window</find>
+      <find>Who Said It: The \&quot;Bob's Burgers\&quot; Edition</find>
+      <find>Which Character From \&quot;Red Oaks\&quot; Are You</find>
+      <find>Last Night's</find>
+      <find>\&quot;Friends\&quot;</find>
+      <find>North Carolina terrorist ring broken up, seven arrested</find>
     </findStrings>
     <replaceStrings>
       <replace>X</replace>
       <replace>x</replace>
       <replace>y</replace>
+      <replace>1&quot;,&quot;</replace>
+      <replace>0&quot;,&quot;</replace>
+      <replace>kbait&quot;:&quot;</replace>
+      <replace>&quot;},{</replace>
+      <replace>&quot;text&quot;:&quot;</replace>
+      <replace>\</replace>
+      <replace>clickbait&quot;:&quot;0&quot;</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -192,12 +161,8 @@
         <option value="$PROJECT_DIR$/food.csv" />
         <option value="$PROJECT_DIR$/domaci_03/tekst_zadatka.txt" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/domaci_03/svm.py" />
         <option value="$PROJECT_DIR$/domaci_03/sve.csv" />
         <option value="$PROJECT_DIR$/domaci_03/sve.txt" />
-        <option value="$PROJECT_DIR$/domaci_03/data.json" />
-        <option value="$PROJECT_DIR$/domaci_03/resources/train.json" />
-        <option value="$PROJECT_DIR$/domaci_03/skripta.py" />
         <option value="$PROJECT_DIR$/domaci_03/data_01.json" />
         <option value="$PROJECT_DIR$/domaci_03/data_02.json" />
         <option value="$PROJECT_DIR$/domaci_03/data_03.json" />
@@ -206,6 +171,11 @@
         <option value="$PROJECT_DIR$/domaci_03/data_06.json" />
         <option value="$PROJECT_DIR$/domaci_03/data_07.json" />
         <option value="$PROJECT_DIR$/domaci_03/data_08.json" />
+        <option value="$PROJECT_DIR$/domaci_03/data.json" />
+        <option value="$PROJECT_DIR$/domaci_03/resources/train.json" />
+        <option value="$PROJECT_DIR$/domaci_03/whole_test.json" />
+        <option value="$PROJECT_DIR$/domaci_03/skripta.py" />
+        <option value="$PROJECT_DIR$/domaci_03/svm.py" />
       </list>
     </option>
   </component>
@@ -260,7 +230,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -279,7 +249,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.skripta (1)">
+  <component name="RunManager" selected="Python.svm">
     <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -387,8 +357,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.skripta (1)" />
         <item itemvalue="Python.svm" />
+        <item itemvalue="Python.skripta (1)" />
         <item itemvalue="Python.parsiranjeAktivnosti" />
         <item itemvalue="Python.knn" />
         <item itemvalue="Python.scriptica" />
@@ -426,9 +396,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39328277" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.496208" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7204767" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.20368364" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -471,6 +441,26 @@
           <line>107</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/domaci_03/skripta.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/domaci_03/skripta.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/domaci_03/svm.py</url>
+          <line>176</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/domaci_03/svm.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
@@ -484,60 +474,53 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>vector.toarray()</expression-string>
+        <expression-string>text[:position-1:]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position + len(stopword)]</expression-string>
+        <expression-string>text[:position:]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position - 1]</expression-string>
+        <expression-string>text[position + len(stopword)::]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>title_objects[-1].text</expression-string>
+        <expression-string>X_train</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position+len(stopword)+1]</expression-string>
+        <expression-string>title</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position+len(stopword)]</expression-string>
+        <expression-string>for title in title_objects:</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position+1]</expression-string>
+        <expression-string>for title in title_objects</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position-1]</expression-string>
+        <expression-string>title_objects[3]</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>text[position]</expression-string>
+        <expression-string>title_objects(3)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/sklearn/utils/class_weight.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="95" column="50" lean-forward="true" selection-start-line="95" selection-start-column="50" selection-end-line="95" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_02/Ridge.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/collections/__init__.pyi">
       <provider selected="true" editor-type-id="text-editor">
@@ -727,20 +710,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="26" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-            <element signature="e#138#1896#0" />
-            <element signature="e#1916#2012#0" />
-            <element signature="e#2548#3240#0" />
-            <element signature="e#3328#4344#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/sve.txt">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -758,31 +727,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret column="24512" lean-forward="true" selection-start-column="24512" selection-end-column="24512" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
+    <entry file="file://$PROJECT_DIR$/domaci_03/data_08.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="1253" lean-forward="true" selection-start-column="1198" selection-end-column="1253" />
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/data_01.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="150090" selection-start-column="150090" selection-end-column="150090" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/data_02.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <caret column="43" lean-forward="true" selection-end-column="150091" />
         </state>
       </provider>
     </entry>
@@ -807,23 +762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/skripta.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/data_06.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/data_07.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -831,17 +769,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/data.json">
+    <entry file="file://$PROJECT_DIR$/domaci_03/data_06.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret column="860729" lean-forward="true" selection-start-column="747289" selection-end-column="860729" />
+        <state>
+          <caret column="30" lean-forward="true" selection-end-column="82751" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_03/data_08.json">
+    <entry file="file://$PROJECT_DIR$/domaci_03/data_02.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <caret column="96396" selection-start-column="96396" selection-end-column="96396" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/preview.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="79" lean-forward="true" selection-start-column="24" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/whole_test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2676">
+          <caret column="103713" selection-start-column="103713" selection-end-column="103713" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret column="181236" selection-start-column="181181" selection-end-column="181236" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/resources/train.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret column="1287" selection-start-column="1287" selection-end-column="1287" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/skripta.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#795#838#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_03/svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="203" lean-forward="true" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#5076#5111#0" />
+            <element signature="e#5457#5760#0" />
+          </folding>
         </state>
       </provider>
     </entry>
