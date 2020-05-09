@@ -1,4 +1,6 @@
-const_interpunction = [',', '.', ';', '-', '?', '!', ':', '|', '_', '@', '~', '#', '^', '(', ')', '{', '}', '[', ']']
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer
+const_interpunction = ['"', ',', '.', ';', '-', '?', '!', ':', '|', '_', '@', '~', '#', '^', '(', ')', '{', '}', '[', ']']
 
 const_stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll",
                    "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's",
@@ -116,9 +118,58 @@ def text_preprocessing(fileName):
     # for t in title_objects:
         # print(t.clickbait)
         # print(t.text)
-    return title_objects
+
+    X_train = []
+    Y_train = []
+    for title in title_objects:
+        X_train.append(title.text)
+        Y_train.append(title.clickbait)
+
+    return X_train, Y_train
+
+
+def vectorisation(training, test):
+
+    vectorizer = TfidfVectorizer()
+    vector_training = vectorizer.fit_transform(training)
+    vector_test = vectorizer.transform(test)
+
+    # print(vectorizer.vocabulary_)
+    # print(vector_training.toarray())
+    # print(vector_test.toarray())
+    return vector_training.toarray(), vector_test.toarray()
 
 
 if __name__ == '__main__':
-    training_titles = text_preprocessing('resources/train.json')
-    test_titles = text_preprocessing('resources/preview.json')
+    X_train, Y_train = text_preprocessing('resources/train.json')
+    X_test, Y_test  = text_preprocessing('resources/preview.json')
+
+    X_train, X_test = vectorisation(X_train, X_test)
+
+    from sklearn.svm import SVC
+
+    classifier = SVC(kernel='linear', random_state=0)
+    classifier.fit(X_train, Y_train)
+
+    Y_Pred = classifier.predict(X_test)
+
+    # print(Y_Pred)
+    # print("--")
+    # print(Y_test)
+
+    from sklearn.metrics import accuracy_score
+
+    print(accuracy_score(Y_test, Y_Pred))
+
+
+
+
+
+
+
+
+
+
+
+
+
