@@ -1,6 +1,10 @@
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfVectorizer
-const_interpunction = ['"', ',', '.', ';', '-', '?', '!', ':', '|', '_', '@', '~', '#', '^', '(', ')', '{', '}', '[', ']']
+from sklearn.model_selection import cross_val_score
+from sklearn.metrics import accuracy_score
+import datetime
+
+const_interpunction = [',', '.', ';', '-', '?', '!', ':', '|', '_', '@', '~', '#', '^', '(', ')', '{', '}', '[', ']', '\\', '/', '+']
 
 const_stopwords = ['i', 'me', 'my', 'myself', 'we', 'our', 'ours', 'ourselves', 'you', "you're", "you've", "you'll",
                    "you'd", 'your', 'yours', 'yourself', 'yourselves', 'he', 'him', 'his', 'himself', 'she', "she's",
@@ -118,10 +122,10 @@ def text_preprocessing(fileName, isTraining):
                 naslov = title[11:-1].lower()
             else:
                 naslov = title[10:-1].lower()
-            text = remove_stopwords(naslov)
-            text = remove_interpunction(text)
+            # text = remove_stopwords(naslov)
+            # text = remove_interpunction(text)
 
-            naslovi.append(text)
+            naslovi.append(naslov)
             clickbates.append(clickbait)
 
     naslovi[-1] = naslovi[-1][:-2]
@@ -166,13 +170,22 @@ def text_preprocessing(fileName, isTraining):
 #     return X_train, Y_train
 
 def vectorisation(training, test):
-
+    # vectorizer = CountVectorizer()
+    # vectorizer = CountVectorizer(training, stop_words=const_stopwords)
     vectorizer = TfidfVectorizer()
     vector_training = vectorizer.fit_transform(training)
     vector_test = vectorizer.transform(test)
     return vector_training.toarray(), vector_test.toarray()
 
 if __name__ == '__main__':
+    # if len(sys.argv) != 3:
+    #     print("Bad argument list, enter in following form:")
+    #     print("python <script_name>.py <train_set_path> <test_set_path>")
+    #     exit()
+    # X_train, Y_train = text_preprocessing(sys.argv[1], True)
+    # X_test, Y_test  = text_preprocessing(sys.argv[2], True)
+
+    a = datetime.datetime.now()
     X_train, Y_train = text_preprocessing('resources/train.json', True)
     # X_test, Y_test  = text_preprocessing('resources/preview.json', False)
     X_test, Y_test  = text_preprocessing('whole_test.json', True)
@@ -181,18 +194,18 @@ if __name__ == '__main__':
 
     from sklearn.svm import SVC
 
-    classifier = SVC(kernel='linear', random_state=0)
+    classifier = SVC(kernel='linear', random_state=0, C=1)
     classifier.fit(X_train, Y_train)
 
     Y_Pred = classifier.predict(X_test)
 
-    # print(Y_Pred)
-    # print("--")
-    # print(Y_test)
+    # scores = cross_val_score(classifier, X_test, Y_test, cv=5)
+    # print(scores)
 
-    from sklearn.metrics import accuracy_score
 
     print(accuracy_score(Y_test, Y_Pred))
+    b = datetime.datetime.now()
+    print(b - a)
 
 
 
