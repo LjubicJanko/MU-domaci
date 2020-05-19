@@ -1,0 +1,8 @@
+Dostupan je deo policijskih izveštaja o saobraćajnim nesrećama u SAD u periodu 1997 - 2002.
+Na osnovu dostupnih podataka izvršiti procenu brzine vozila u trenutku sudara (kolona speed).
+Opis svih atributa je dostupan na pratećoj prezentaciji za ovaj zadatak, okačenoj na Enastavi.
+Zadatak je uspešno urađen ukoliko se na kompletnom testnom skupu podataka dobije mikro f1 mera (eng. micro f1 score) veća od 0.51.
+Zadatak se rešava upotrebom ansambla klasifikatora.
+
+
+Acceptance criteria: Micro F1 > 0.51

@@ -41,8 +41,8 @@ if __name__ == '__main__':
     # X_test, Y_test  = text_preprocessing(sys.argv[2])
 
     X_train, Y_train = text_preprocessing('resources/train.json')
-    X_test, Y_test  = text_preprocessing('resources/preview.json')
-    # X_test, Y_test  = text_preprocessing('whole_test.json')
+    # X_test, Y_test  = text_preprocessing('resources/preview.json')
+    X_test, Y_test  = text_preprocessing('whole_test.json')
 
     X_train, X_test = vectorisation(X_train, X_test)
 
