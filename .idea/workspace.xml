@@ -2,14 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domaci_03/svm_final.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_04/tekst_zadatka.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domaci_04/ensemble.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_01/Domaci_01.doc" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_01/Domaci_01.doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/sve.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/svm_nopreprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm_nopreprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/whole_test.json" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/whole_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domaci_04/resources/Kag_Airbag.csv" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_04/resources/Kag_Airbag.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,20 +14,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/domaci_04/tekst_zadatka.txt">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domaci_04/ensemble.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/domaci_04/resources/train.csv">
           <provider selected="true" editor-type-id="csv-text-editor">
             <state>
-              <caret column="24" selection-end-column="24" />
+              <caret column="76" selection-start-column="71" selection-end-column="76" />
             </state>
           </provider>
           <provider editor-type-id="csv-table-editor">
@@ -51,11 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Egypt's top envoy in Iraq confirmed killed</find>
-      <find>Which Belle And Sebastian Album Should You Listen To Right Now</find>
-      <find>hich</find>
-      <find>Which</find>
-      <find>1&quot;, &quot;</find>
       <find>Indiana businessman held hostage in Iraq</find>
       <find>0&quot;, &quot;</find>
       <find>kbait&quot;: &quot;</find>
@@ -81,6 +83,11 @@
       <find>-</find>
       <find>clickbait</find>
       <find>clickbait&quot;:0,&quot;text&quot;:&quot;Gunman shoots during board meeting in Florida, then kills self&quot;</find>
+      <find>alive</find>
+      <find>394.5529999994</find>
+      <find>394.552999999</find>
+      <find>,alive</find>
+      <find>&quot;</find>
     </findStrings>
     <replaceStrings>
       <replace>X</replace>
@@ -144,6 +151,9 @@
         <option value="$PROJECT_DIR$/domaci_03/svm_final.py" />
         <option value="$PROJECT_DIR$/domaci_03/svm_nopreprocess.py" />
         <option value="$PROJECT_DIR$/domaci_04/tekst_zadatka.txt" />
+        <option value="$PROJECT_DIR$/domaci_04/resources/Kag_Airbag.csv" />
+        <option value="$PROJECT_DIR$/domaci_04/resources/train.csv" />
+        <option value="$PROJECT_DIR$/domaci_04/ensemble.py" />
       </list>
     </option>
   </component>
@@ -172,6 +182,11 @@
             <path>
               <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
               <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
+              <item name="domaci_02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
               <item name="domaci_04" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -179,13 +194,6 @@
               <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
               <item name="domaci_04" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MU-domaci" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MU-domaci" type="462c0819:PsiDirectoryNode" />
-              <item name="domaci_04" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="Kag_Airbag.csv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,10 +213,11 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\FAKS\Semestar_8\Masinsko_Ucenje\MU-domaci\domaci_04\resources" />
       <recent name="F:\FAKS\Semestar_8\Masinsko_Ucenje\MU-domaci\domaci_02" />
     </key>
   </component>
@@ -224,8 +233,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.svm_nopreprocess">
-    <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.ensemble">
+    <configuration name="ensemble" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -233,11 +242,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_04" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_02/knn.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_04/ensemble.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -332,11 +341,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.ensemble" />
         <item itemvalue="Python.svm_nopreprocess" />
         <item itemvalue="Python.svm" />
         <item itemvalue="Python.skripta (1)" />
         <item itemvalue="Python.parsiranjeAktivnosti" />
-        <item itemvalue="Python.knn" />
       </list>
     </recent_temporary>
   </component>
@@ -365,13 +374,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-908" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1913815" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1913815" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3243607" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41991925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33243608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -505,39 +515,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/domaci_02/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_01/brains_manual.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_01/resources/test_preview.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Vezbe/Zadatak1/z1_test.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="301">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_02/skripta.py" />
     <entry file="file://$PROJECT_DIR$/domaci_02/scriptica.py" />
     <entry file="file://$PROJECT_DIR$/domaci_02/resources/a.txt" />
@@ -654,16 +631,6 @@
     <entry file="file://$PROJECT_DIR$/domaci_03/data_07.json" />
     <entry file="file://$PROJECT_DIR$/domaci_03/data_06.json" />
     <entry file="file://$PROJECT_DIR$/domaci_03/data_02.json" />
-    <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="126" column="58" lean-forward="true" selection-start-line="121" selection-start-column="4" selection-end-line="126" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/domaci_03/sve.txt">
       <provider editor-type-id="csv-text-editor">
         <state relative-caret-position="408">
@@ -747,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_04/tekst_zadatka.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -761,14 +721,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/domaci_04/resources/train.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
+    <entry file="file://$PROJECT_DIR$/domaci_04/tekst_zadatka.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="24" selection-end-column="24" />
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_04/resources/Kag_Airbag.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_04/resources/test_preview.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="72" lean-forward="true" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
         </state>
       </provider>
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_01/brains_manual.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-864">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_02/knn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_04/resources/train.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="76" selection-start-column="71" selection-end-column="76" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domaci_04/ensemble.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
       </provider>
     </entry>
   </component>
