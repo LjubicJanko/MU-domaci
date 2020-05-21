@@ -1,5 +1,15 @@
 import pandas as pd
+from sklearn.ensemble import AdaBoostClassifier  # Boosting Algorithm
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import f1_score
 
+switcher = {
+    "1-9km/h": 1,
+    "10-24": 2,
+    "25-39": 3,
+    "40-54": 4,
+    "55+": 5
+}
 
 def mapBinary(column, value):
     return 0 if column == value else 1
@@ -11,6 +21,11 @@ def mapAbcat(abcat):
     else:
         return 2
 
+def mapSpeed(y):
+    encoded_speed = []
+    for speed in y:
+        encoded_speed.append(switcher.get(speed))
+    return encoded_speed
 
 def encodeData(data):
     for index, row in data.iterrows():
@@ -33,11 +48,27 @@ def read(filePath):
     x = data.iloc[:, 1:]
     y = data['speed']
 
+    # encode string values as integer
     x = encodeData(x)
-
+    y = mapSpeed(y)
     return x, y
 
 
 if __name__ == '__main__':
-    X_train, Y_train = read("./resources/train.csv")
-    # X_test, Y_test = read("./resources/test_preview.csv")
+    X_train, y_train = read("./resources/train.csv")
+    X_test, y_test = read("./resources/test_preview.csv")
+    # X_test, y_test = read("./resources/test.csv")
+
+    cart = DecisionTreeClassifier()
+    num_trees = 25
+
+    # Create classification model for bagging
+    model = AdaBoostClassifier(base_estimator=cart, n_estimators=num_trees, learning_rate=0.1)
+
+    # Train Classification model
+    model.fit(X_train, y_train)
+
+    # Test trained model over test set
+    pred_label = model.predict(X_test)
+
+    print(f1_score(y_test, pred_label, average='micro'))

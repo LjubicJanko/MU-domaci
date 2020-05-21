@@ -1,4 +1,4 @@
-,dvcat,weight,dead,airbag,seatbelt,frontal,sex,ageOFocc,yearacc,yearVeh,abcat,occRole,deploy,injSeverity,caseid
+id,speed,weight,dead,airbag,seatbelt,frontal,sex,ageOFocc,yearacc,yearVeh,abcat,occRole,deploy,injSeverity,caseid
 1,25-39,25.0689999999013,alive,none,belted,1,f,26,1997,1990,unavail,driver,0,3,2:3:1
 2,10-24,25.0689999999013,alive,airbag,belted,1,f,72,1997,1995,deploy,driver,1,1,2:3:2
 3,10-24,32.3789999997243,alive,none,none,1,f,69,1997,1988,unavail,driver,0,4,2:5:1
