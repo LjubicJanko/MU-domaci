@@ -14,11 +14,47 @@ import pandas as pd
 #         if line.strip():
 #             print(line[:-1])
 # #
-with open('result.csv', 'r') as t1, open('resources/train.csv', 'r') as t2:
-    fileone = t1.readlines()
-    filetwo = t2.readlines()
+# with open('result.csv', 'r') as t1, open('resources/train.csv', 'r') as t2:
+#     fileone_noWeights = []
+#     fileone = t1.readlines()
+#     for line in fileone:
+#         line_split = line.split(",")
+#         line_split.pop(1)
+#         fileone_noWeights.append(','.join(line_split))
+#
+#     filetwo_noWeights = []
+#     filetwo = t2.readlines()
+#     for line in filetwo:
+#         line_split = line.split(",")
+#         line_split.pop(1)
+#         filetwo_noWeights.append(','.join(line_split))
+#
+# with open('resources/test.csv', 'w') as outFile:
+#     i = 0
+#     for line in fileone_noWeights:
+#         if line not in filetwo_noWeights:
+#             outFile.write(fileone[i])
+#         i += 1
 
-with open('resources/test.csv', 'w') as outFile:
+
+with open('resources/test_preview.csv', 'r') as t1, open('resources/test.csv', 'r') as t2:
+    fileone_noWeights = []
+    fileone = t1.readlines()
     for line in fileone:
-        if line not in filetwo:
-            outFile.write(line)
+        line_split = line.split(",")
+        line_split.pop(1)
+        fileone_noWeights.append(','.join(line_split))
+
+    filetwo_noWeights = []
+    filetwo = t2.readlines()
+    for line in filetwo:
+        line_split = line.split(",")
+        line_split.pop(1)
+        filetwo_noWeights.append(','.join(line_split))
+
+with open('resources/test.csv', 'a') as outFile:
+    i = 0
+    for line in fileone_noWeights:
+        if line not in filetwo_noWeights:
+            outFile.write(fileone[i])
+        i += 1
