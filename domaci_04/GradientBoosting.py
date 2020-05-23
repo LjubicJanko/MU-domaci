@@ -1,12 +1,8 @@
-from idlelib import tree
-
 import pandas as pd
-from mlxtend.classifier import LogisticRegression
-from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier, \
-    GradientBoostingClassifier  # Boosting Algorithm
+from sklearn.ensemble import GradientBoostingClassifier  # Boosting Algorithm
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import f1_score
-from sklearn.tree import DecisionTreeClassifier
+import sys
 
 switcher = {
     "1-9km/h": 1,
@@ -20,6 +16,7 @@ switcher = {
 def mapBinary(column, value):
     return 0 if column == value else 1
 
+
 def mapAbcat(abcat):
     if abcat == "unavail":
         return 0
@@ -28,11 +25,13 @@ def mapAbcat(abcat):
     else:
         return 2
 
+
 def mapSpeed(y):
     encoded_speed = []
     for speed in y:
         encoded_speed.append(switcher.get(speed))
     return encoded_speed
+
 
 def encodeData(data):
     for index, row in data.iterrows():
@@ -43,6 +42,7 @@ def encodeData(data):
         data.at[index, 'abcat'] = mapAbcat(row["abcat"])
         data.at[index, 'occRole'] = mapBinary(row["occRole"], "driver")
     return data
+
 
 def predictInjSeverity(data):
     data_injseverity_nan = data[data["injSeverity"].isnull()]
@@ -67,9 +67,11 @@ def predictInjSeverity(data):
         i += 1
     return data
 
+
 def meanAgeOfOcc(data):
     data['ageOFocc'].fillna((data['ageOFocc'].mean()), inplace=True)
     return data
+
 
 def read(filePath, training=False):
     # read data
@@ -96,63 +98,26 @@ def read(filePath, training=False):
 
     return x, y
 
+
 if __name__ == '__main__':
-    from time import time
+    if len(sys.argv) != 3:
+        print("Bad argument list, enter in following form:")
+        print("python <script_name>.py <train_set_path> <test_set_path>")
+        exit()
+    X_train, y_train = read(sys.argv[1], True)
+    X_test, y_test  = read(sys.argv[2])
 
-    start_time = time()
-
-    X_train, y_train = read("./resources/train.csv", True)
-    X_test, y_test = read("./resources/test_preview.csv")
+    # X_train, y_train = read("./resources/train.csv", True)
+    # X_test, y_test = read("./resources/test_preview.csv")
     # X_test, y_test = read("./resources/test.csv", True)
 
-    nums = [5, 25, 50, 70, 100, 120, 150, 170, 200, 230, 250, 270, 500, 600, 700, 800, 900, 1000]
-    maximum = 0
+    '''
+        test: 0.5551257253384912 - n_estimators = 100
+        test_preview: 0.5906040268456376 - n_estimators = 100
+    '''
+    clf = GradientBoostingClassifier(n_estimators=100)
 
-    for num in range(5):
-        cart = DecisionTreeClassifier(max_depth=13)
-        # cart = SVC(probability=True)
-        num_trees = 250
-
-        # Create classification model for bagging
-        model = AdaBoostClassifier(base_estimator=cart, n_estimators=num_trees, learning_rate=0.1)
-
-        # Train Classification model
-        model.fit(X_train, y_train)
-
-        # Test trained model over test set
-        pred_label = model.predict(X_test)
-
-
-
-        f1 = f1_score(y_test, pred_label, average='micro')
-        if f1 > maximum:
-            maximum = f1
-        print(str(num) + " >> " + str(f1))
-    print("Maksimum je: >> " + str(maximum))
-
-
-
-    # nestim = [100, 200, 250, 300, 500, 700, 1000]
-    #
-    # for nest in nestim:
-    #     '''
-    #         test: 0.5551257253384912 - n_estimators = 100
-    #         test_preview: 0.5906040268456376 - n_estimators = 100
-    #     '''
-    #     clf = GradientBoostingClassifier(n_estimators=nest)
-    #     '''
-    #         test: 0.5524661508704062 - n_estimators = 100, max_features = 13
-    #         test_preview: 0.5704697986577181 - n_estimators = 200, max_features = 13
-    #     '''
-    #     # clf = RandomForestClassifier(n_estimators=nest, max_features=13, random_state=0)
-    #     clf.fit(X_train, y_train)
-    #     y_pred = clf.predict(X_test)
-    #     f1 = f1_score(y_test, y_pred, average='micro')
-    #     print(f1)
-
-    end_time = time()
-    seconds_elapsed = end_time - start_time
-
-    print(str(seconds_elapsed))
-
-
+    clf.fit(X_train, y_train)
+    y_pred = clf.predict(X_test)
+    f1 = f1_score(y_test, y_pred, average='micro')
+    print(f1)
