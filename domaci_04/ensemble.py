@@ -102,53 +102,54 @@ if __name__ == '__main__':
     start_time = time()
 
     X_train, y_train = read("./resources/train.csv", True)
-    X_test, y_test = read("./resources/test_preview.csv")
+    # X_test, y_test = read("./resources/test_preview.csv")
     # X_test, y_test = read("./resources/test.csv", True)
+    X_test, y_test = read("./resources/z4_test.csv")
 
-    nums = [5, 25, 50, 70, 100, 120, 150, 170, 200, 230, 250, 270, 500, 600, 700, 800, 900, 1000]
-    maximum = 0
-
-    for num in range(5):
-        cart = DecisionTreeClassifier(max_depth=13)
-        # cart = SVC(probability=True)
-        num_trees = 250
-
-        # Create classification model for bagging
-        model = AdaBoostClassifier(base_estimator=cart, n_estimators=num_trees, learning_rate=0.1)
-
-        # Train Classification model
-        model.fit(X_train, y_train)
-
-        # Test trained model over test set
-        pred_label = model.predict(X_test)
-
-
-
-        f1 = f1_score(y_test, pred_label, average='micro')
-        if f1 > maximum:
-            maximum = f1
-        print(str(num) + " >> " + str(f1))
-    print("Maksimum je: >> " + str(maximum))
-
-
-
-    # nestim = [100, 200, 250, 300, 500, 700, 1000]
+    # nums = [5, 25, 50, 70, 100, 120, 150, 170, 200, 230, 250, 270, 500, 600, 700, 800, 900, 1000]
+    # maximum = 0
     #
-    # for nest in nestim:
-    #     '''
-    #         test: 0.5551257253384912 - n_estimators = 100
-    #         test_preview: 0.5906040268456376 - n_estimators = 100
-    #     '''
-    #     clf = GradientBoostingClassifier(n_estimators=nest)
-    #     '''
-    #         test: 0.5524661508704062 - n_estimators = 100, max_features = 13
-    #         test_preview: 0.5704697986577181 - n_estimators = 200, max_features = 13
-    #     '''
-    #     # clf = RandomForestClassifier(n_estimators=nest, max_features=13, random_state=0)
-    #     clf.fit(X_train, y_train)
-    #     y_pred = clf.predict(X_test)
-    #     f1 = f1_score(y_test, y_pred, average='micro')
-    #     print(f1)
+    # for num in range(5):
+    #     cart = DecisionTreeClassifier(max_depth=13)
+    #     # cart = SVC(probability=True)
+    #     num_trees = 250
+    #
+    #     # Create classification model for bagging
+    #     model = AdaBoostClassifier(base_estimator=cart, n_estimators=num_trees, learning_rate=0.1)
+    #
+    #     # Train Classification model
+    #     model.fit(X_train, y_train)
+    #
+    #     # Test trained model over test set
+    #     pred_label = model.predict(X_test)
+    #
+    #
+    #
+    #     f1 = f1_score(y_test, pred_label, average='micro')
+    #     if f1 > maximum:
+    #         maximum = f1
+    #     print(str(num) + " >> " + str(f1))
+    # print("Maksimum je: >> " + str(maximum))
+
+
+
+    nestim = [100, 200, 250, 300, 500, 700, 1000]
+
+    for nest in nestim:
+        '''
+            test: 0.5551257253384912 - n_estimators = 100
+            test_preview: 0.5906040268456376 - n_estimators = 100
+        '''
+        clf = GradientBoostingClassifier(n_estimators=nest)
+        '''
+            test: 0.5524661508704062 - n_estimators = 100, max_features = 13
+            test_preview: 0.5704697986577181 - n_estimators = 200, max_features = 13
+        '''
+        # clf = RandomForestClassifier(n_estimators=nest, max_features=13, random_state=0)
+        clf.fit(X_train, y_train)
+        y_pred = clf.predict(X_test)
+        f1 = f1_score(y_test, y_pred, average='micro')
+        print(f1)
 
     end_time = time()
     seconds_elapsed = end_time - start_time

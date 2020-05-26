@@ -1,0 +1,8 @@
+Klasterovati države na osnovu njihovih karakteristika u klastere koji predstavljaju geografske regione (region):
+Africa, Americas, Asia i Europe. Opis svih atributa je dostupan na pratećoj prezentaciji za ovaj zadatak, okačenoj na Enastavi.
+Zadatak je uspešno urađen ukoliko se na kompletnom testnom skupu podataka dobije v mera (eng. v measure score)
+veća od 0.40. Zadatak se rešava upotrebom Modela Gausovih mešavina (eng. Gaussian Mixutre Model, GMM), tj.
+algoritmom Očekivanje - maksimizacija (eng. Expectation - maximization, EM).
+
+
+Acceptance criteria: v measure > 0.4

@@ -80,7 +80,8 @@ def read(filePath, training=False):
     # remove rows with NAN values
     # data.dropna(inplace=True)
 
-    data = meanAgeOfOcc(data)
+    if training:
+        data = meanAgeOfOcc(data)
 
     for column in data.columns[:-1]:
         data = data[pd.notnull(data[column])]
@@ -100,21 +101,16 @@ def read(filePath, training=False):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Bad argument list, enter in following form:")
-        print("python <script_name>.py <train_set_path> <test_set_path>")
-        exit()
-    X_train, y_train = read(sys.argv[1], True)
-    X_test, y_test  = read(sys.argv[2])
+    # if len(sys.argv) != 3:
+    #     print("Bad argument list, enter in following form:")
+    #     print("python <script_name>.py <train_set_path> <test_set_path>")
+    #     exit()
+    # X_train, y_train = read(sys.argv[1], True)
+    # X_test, y_test  = read(sys.argv[2])
 
-    # X_train, y_train = read("./resources/train.csv", True)
-    # X_test, y_test = read("./resources/test_preview.csv")
-    # X_test, y_test = read("./resources/test.csv", True)
+    X_train, y_train = read("./resources/train.csv", True)
+    X_test, y_test = read("./resources/z4_test.csv")
 
-    '''
-        test: 0.5551257253384912 - n_estimators = 100
-        test_preview: 0.5906040268456376 - n_estimators = 100
-    '''
     clf = GradientBoostingClassifier(n_estimators=100)
 
     clf.fit(X_train, y_train)
