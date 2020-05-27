@@ -29,38 +29,32 @@ def meanInfant(data):
     data['infant'].fillna((data['infant'].mean()), inplace=True)
     return data
 
+def plot(x, y, x_name, y_name):
+    plt.figure(figsize=(7, 7))
+    plt.scatter(x, y)
+    plt.xlabel(x_name)
+    plt.ylabel(y_name)
+    plt.show()
+
 
 def read(filePath, training=False):
     # read data
     data = pd.read_csv(filePath)
 
-    if training:
-        data = data[data['infant'] < 350]
-        plt.figure(figsize=(7, 7))
-        plt.scatter(data["infant"], data["region"])
-        plt.xlabel('infant')
-        plt.ylabel('region')
-        plt.title('Infant by region')
-        plt.show()
-    # plt.figure(figsize=(7, 7))
-    # plt.scatter(data["income"], data["region"])
-    # plt.xlabel('income')
-    # plt.ylabel('region')
-    # plt.title('Income by region')
-    # plt.show()
-
-    # plt.figure(figsize=(7, 7))
-    # plt.scatter(data["oil"], data["region"])
-    # plt.xlabel('oil')
-    # plt.ylabel('region')
-    # plt.title('Data Distribution')
-    # plt.show()
-
-
     # remove rows with NAN values
-
-    data = meanInfant(data)
+    # data = meanInfant(data)
     data.dropna(inplace=True)
+
+    ''' removing outliers - line 52 and 55'''
+    if training:
+        # pass
+        # plot(data['income'], data["region"], 'income', 'region')
+        data = data[(data['region'] == 'Americas') & (data['income'] < 3000) | (data['region'] != 'Americas')]
+        # plot(data['income'], data["region"], 'income', 'region')
+        # plot(data['infant'], data["region"], 'infant', 'region')
+        data = data[data['infant'] < 350]
+        # plot(data['infant'], data["region"], 'infant', 'region')
+
 
     x = data.loc[:, data.columns != 'region']
     y = data['region']
@@ -80,7 +74,7 @@ if __name__ == '__main__':
     max_n = 0
     iteration = 0
 
-    for n in range(2, 60):
+    for n in range(2, 30):
         for i in range(10):
             g = GaussianMixture(n_components=n)
             g.fit(X_train, y_train)
@@ -96,5 +90,5 @@ if __name__ == '__main__':
             if maximum == 1.0:
                 break
 
-    print("N components: " + str(max_n) + " Iteration: " + str(iteration))
+    print("N components: " + str(max_n) + " Iteration: " + str(iteration+1))
     print(maximum)
