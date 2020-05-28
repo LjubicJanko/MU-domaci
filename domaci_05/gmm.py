@@ -1,8 +1,11 @@
 import pandas as pd
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import v_measure_score
+import random
+import numpy
+import sys
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 switcher = {
     "Africa": 1,
@@ -29,12 +32,12 @@ def meanInfant(data):
     data['infant'].fillna((data['infant'].mean()), inplace=True)
     return data
 
-def plot(x, y, x_name, y_name):
-    plt.figure(figsize=(7, 7))
-    plt.scatter(x, y)
-    plt.xlabel(x_name)
-    plt.ylabel(y_name)
-    plt.show()
+# def plot(x, y, x_name, y_name):
+#     plt.figure(figsize=(7, 7))
+#     plt.scatter(x, y)
+#     plt.xlabel(x_name)
+#     plt.ylabel(y_name)
+#     plt.show()
 
 
 def read(filePath, training=False):
@@ -45,11 +48,14 @@ def read(filePath, training=False):
     # data = meanInfant(data)
     data.dropna(inplace=True)
 
-    ''' removing outliers - line 52 and 55'''
+    ''' removing outliers - line 53 and 60'''
     if training:
-        # pass
         # plot(data['income'], data["region"], 'income', 'region')
         data = data[(data['region'] == 'Americas') & (data['income'] < 3000) | (data['region'] != 'Americas')]
+        # data = data[(data['region'] == 'Asia') & (data['income'] < 1000) | (data['region'] != 'Asia')]
+        # data = data[(data['region'] == 'Africa') & (data['income'] < 2000) | (data['region'] != 'Africa')]
+
+
         # plot(data['income'], data["region"], 'income', 'region')
         # plot(data['infant'], data["region"], 'infant', 'region')
         data = data[data['infant'] < 350]
@@ -66,29 +72,25 @@ def read(filePath, training=False):
     return x, y
 
 if __name__ == '__main__':
-    X_train, y_train = read("./resources/train.csv", True)
+    if len(sys.argv) != 3:
+        print("Bad argument list, enter in following form:")
+        print("python <script_name>.py <train_set_path> <test_set_path>")
+        exit()
+    X_train, y_train = read(sys.argv[1], True)
+    X_test, y_test  = read(sys.argv[2])
+
+    # X_train, y_train = read("./resources/train.csv", True)
     # X_test, y_test = read("./resources/test_preview.csv")
-    X_test, y_test = read("./resources/test_final.csv")
-
-    maximum = 0
-    max_n = 0
-    iteration = 0
-
-    for n in range(2, 30):
-        for i in range(10):
-            g = GaussianMixture(n_components=n)
-            g.fit(X_train, y_train)
 
 
-            y_pred = g.predict(X_test)
+    random.seed(0)
+    numpy.random.seed(0)
 
-            v_measure = v_measure_score(y_test, y_pred)
-            if v_measure > maximum:
-                iteration = i
-                maximum = v_measure
-                max_n = n
-            if maximum == 1.0:
-                break
+    g = GaussianMixture(n_components=4)
 
-    print("N components: " + str(max_n) + " Iteration: " + str(iteration+1))
-    print(maximum)
+    g.fit(X_train, y_train)
+
+    y_pred = g.predict(X_test)
+
+    v_measure = v_measure_score(y_test, y_pred)
+    print(v_measure)
