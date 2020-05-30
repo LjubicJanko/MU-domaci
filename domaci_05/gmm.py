@@ -1,8 +1,6 @@
 import pandas as pd
 from sklearn.mixture import GaussianMixture
 from sklearn.metrics import v_measure_score
-import random
-import numpy
 import sys
 
 # import matplotlib.pyplot as plt
@@ -50,6 +48,7 @@ def read(filePath, training=False):
 
     ''' removing outliers - line 53 and 60'''
     if training:
+
         # plot(data['income'], data["region"], 'income', 'region')
         data = data[(data['region'] == 'Americas') & (data['income'] < 3000) | (data['region'] != 'Americas')]
         # data = data[(data['region'] == 'Asia') & (data['income'] < 1000) | (data['region'] != 'Asia')]
@@ -83,11 +82,7 @@ if __name__ == '__main__':
     # X_test, y_test = read("./resources/test_preview.csv")
 
 
-    random.seed(0)
-    numpy.random.seed(0)
-
-    g = GaussianMixture(n_components=4)
-
+    g = GaussianMixture(n_components=4, random_state=2)
     g.fit(X_train, y_train)
 
     y_pred = g.predict(X_test)
