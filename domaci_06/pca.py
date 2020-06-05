@@ -1,9 +1,17 @@
 import pandas as pd
-from sklearn.mixture import GaussianMixture
-from sklearn.metrics import v_measure_score
-import sys
+import numpy as np
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
+from sklearn.metrics import v_measure_score, f1_score
+from sklearn.preprocessing import StandardScaler
+from sklearn.decomposition import PCA
+from sklearn.decomposition import KernelPCA
+
 
 import matplotlib.pyplot as plt
+from sklearn.mixture import GaussianMixture
+from sklearn.model_selection import cross_val_score
+
+import sys
 
 switcher_maritl = {
     "1. Never Married": 1,
@@ -35,15 +43,6 @@ def encodeRace(data):
 
 def mapBinary(column, value):
     return 0 if column == value else 1
-'''
-    health: 1. <=Good
-    jobclass: 1. Industrial
-    health_ins: 1. Yes
-'''
-# def encodeBooleanColumn(data, columnName, cellValue):
-#     for index, row in data.iterrows():
-#         data.at[index, columnName] = mapBinary(row[columnName], cellValue)
-#     return data
 
 def plot(x, y, x_name, y_name):
     plt.figure(figsize=(7, 7))
@@ -75,9 +74,14 @@ def read(filePath, training=False):
 
     # encode string values as integer
     x = encode_x(x)
+    # x = floating(x)
     y = encodeRace(y)
 
     return x, y
+
+
+def get_result(true, pred):
+    return v_measure_score(true, pred)
 
 if __name__ == '__main__':
     # if len(sys.argv) != 3:
@@ -88,6 +92,38 @@ if __name__ == '__main__':
     # X_test, y_test  = read(sys.argv[2])
 
     X_train, y_train = read("./resources/train.csv", True)
-    X_test, y_test = read("./resources/test_preview.csv")
-    print(X_train.head())
-    print(y_train)
+    # X_test, y_test = read("./resources/test_preview.csv")
+    X_test, y_test = read("./resources/ceo_test.csv")
+    # X_test, y_test = read("./resources/whole.csv")
+
+
+    scaler = StandardScaler()
+    # Fit on training set only.
+    scaler.fit(X_train.astype(float))
+    # Apply transform to both the training set and the test set.
+    X_train = scaler.transform(X_train.astype(float))
+    X_test = scaler.transform(X_test.astype(float))
+
+    # Make an instance of the Model
+    pca = KernelPCA(4, kernel='linear')
+    pca.fit(X_train)
+
+    X_train = pca.transform(X_train)
+    X_test = pca.transform(X_test)
+
+
+    # nestim = [700]
+    nestim = [500, 600, 700]
+    # nestim = [10, 20, 30, 40, 50,100,150,200,250]
+
+
+    maximum = 0
+    for nest in nestim:
+        for i in range(1, 10, 2):
+            # clf = GradientBoostingClassifier(n_estimators=nest, random_state=i, subsample=0.8)
+            clf = RandomForestClassifier(n_estimators=nest, max_features=4, random_state=i)
+            clf.fit(X_train, y_train)
+            y_pred = clf.predict(X_test)
+            f1 = f1_score(y_test, y_pred, average='micro')
+            print(f1)
+    print(maximum)
