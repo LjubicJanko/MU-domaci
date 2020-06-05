@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/ceo_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/skripta.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/whole.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domaci_06/pca.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_06/pca.py" afterDir="false" />
     </list>
@@ -235,7 +231,7 @@
       <screen x="1600" y="-165" width="1600" height="860" />
     </state>
     <state x="2177" y="4" key="FileChooserDialogImpl/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590678576783" />
-    <state width="1579" height="291" key="GridCell.Tab.0.bottom" timestamp="1591369265052">
+    <state width="1579" height="192" key="GridCell.Tab.0.bottom" timestamp="1591374912661">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.bottom/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -243,9 +239,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="291" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591369265052" />
+    <state width="1579" height="192" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591374912661" />
     <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="291" key="GridCell.Tab.0.center" timestamp="1591369265052">
+    <state width="1579" height="192" key="GridCell.Tab.0.center" timestamp="1591374912661">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.center/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -253,9 +249,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.center/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.center/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="291" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591369265052" />
+    <state width="1579" height="192" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591374912661" />
     <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="291" key="GridCell.Tab.0.left" timestamp="1591369265052">
+    <state width="1579" height="192" key="GridCell.Tab.0.left" timestamp="1591374912661">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.left/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -263,9 +259,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.left/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.left/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="291" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591369265052" />
+    <state width="1579" height="192" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591374912661" />
     <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="291" key="GridCell.Tab.0.right" timestamp="1591369265052">
+    <state width="1579" height="192" key="GridCell.Tab.0.right" timestamp="1591374912661">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.right/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -273,7 +269,7 @@
     <state width="1579" height="217" key="GridCell.Tab.0.right/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.right/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="291" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591369265052" />
+    <state width="1579" height="192" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591374912661" />
     <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
     <state width="1579" height="149" key="GridCell.Tab.1.bottom" timestamp="1591366435325">
       <screen x="1600" y="0" width="1600" height="860" />
