@@ -188,7 +188,6 @@ if __name__ == '__main__':
     a = datetime.datetime.now()
     X_train, Y_train = text_preprocessing('resources/train.json', True)
     X_test, Y_test  = text_preprocessing('resources/preview.json', False)
-    # X_test, Y_test  = text_preprocessing('whole_test.json', True)
 
     X_train, X_test = vectorisation(X_train, X_test)
 

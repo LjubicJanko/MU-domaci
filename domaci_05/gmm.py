@@ -3,7 +3,7 @@ from sklearn.mixture import GaussianMixture
 from sklearn.metrics import v_measure_score
 import sys
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 switcher = {
     "Africa": 1,
@@ -30,12 +30,12 @@ def meanInfant(data):
     data['infant'].fillna((data['infant'].mean()), inplace=True)
     return data
 
-# def plot(x, y, x_name, y_name):
-#     plt.figure(figsize=(7, 7))
-#     plt.scatter(x, y)
-#     plt.xlabel(x_name)
-#     plt.ylabel(y_name)
-#     plt.show()
+def plot(x, y, x_name, y_name):
+    plt.figure(figsize=(7, 7))
+    plt.scatter(x, y)
+    plt.xlabel(x_name)
+    plt.ylabel(y_name)
+    plt.show()
 
 
 def read(filePath, training=False):
@@ -71,15 +71,15 @@ def read(filePath, training=False):
     return x, y
 
 if __name__ == '__main__':
-    if len(sys.argv) != 3:
-        print("Bad argument list, enter in following form:")
-        print("python <script_name>.py <train_set_path> <test_set_path>")
-        exit()
-    X_train, y_train = read(sys.argv[1], True)
-    X_test, y_test  = read(sys.argv[2])
+    # if len(sys.argv) != 3:
+    #     print("Bad argument list, enter in following form:")
+    #     print("python <script_name>.py <train_set_path> <test_set_path>")
+    #     exit()
+    # X_train, y_train = read(sys.argv[1], True)
+    # X_test, y_test  = read(sys.argv[2])
 
-    # X_train, y_train = read("./resources/train.csv", True)
-    # X_test, y_test = read("./resources/test_preview.csv")
+    X_train, y_train = read("./resources/train.csv", True)
+    X_test, y_test = read("./resources/test_final.csv")
 
 
     g = GaussianMixture(n_components=4, random_state=2)
