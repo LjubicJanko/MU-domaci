@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05ea07eb-2ff6-46e9-8a45-9ac1bb0cda98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/domaci_05/resources/z5_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/test_preview.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/resources/train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domaci_06/tekst_zadatka" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domaci_06/pca.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/skripta.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/svm_final.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm_final.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/svm_nopreprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_03/svm_nopreprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_03/whole_test.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/domaci_05/gmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/domaci_05/gmm.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,28 +46,7 @@
       <recent name="F:\FAKS\Semestar_8\Masinsko_Ucenje\MU-domaci\domaci_02" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.gmm">
-    <configuration name="ensemble" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="MU-domaci" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_04" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_04/ensemble.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.pca">
     <configuration name="gmm" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="MU-domaci" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,6 +81,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_05/koko.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pca" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="MU-domaci" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/domaci_06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/domaci_06/pca.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pca" />
         <item itemvalue="Python.gmm" />
         <item itemvalue="Python.svm_final" />
         <item itemvalue="Python.koko" />
         <item itemvalue="Python.skripta (1)" />
-        <item itemvalue="Python.ensemble" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +229,7 @@
       <screen x="1600" y="-165" width="1600" height="860" />
     </state>
     <state x="2177" y="4" key="FileChooserDialogImpl/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590678576783" />
-    <state width="1579" height="140" key="GridCell.Tab.0.bottom" timestamp="1591349416266">
+    <state width="1579" height="140" key="GridCell.Tab.0.bottom" timestamp="1591354469267">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.bottom/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -246,9 +237,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591349416266" />
+    <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591354469267" />
     <state width="1579" height="140" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="140" key="GridCell.Tab.0.center" timestamp="1591349416266">
+    <state width="1579" height="140" key="GridCell.Tab.0.center" timestamp="1591354469267">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.center/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -256,9 +247,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.center/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.center/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591349416266" />
+    <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591354469267" />
     <state width="1579" height="140" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="140" key="GridCell.Tab.0.left" timestamp="1591349416266">
+    <state width="1579" height="140" key="GridCell.Tab.0.left" timestamp="1591354469266">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.left/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -266,9 +257,9 @@
     <state width="1579" height="217" key="GridCell.Tab.0.left/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.left/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591349416266" />
+    <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591354469266" />
     <state width="1579" height="140" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
-    <state width="1579" height="140" key="GridCell.Tab.0.right" timestamp="1591349416266">
+    <state width="1579" height="140" key="GridCell.Tab.0.right" timestamp="1591354469267">
       <screen x="1600" y="0" width="1600" height="860" />
     </state>
     <state width="1579" height="258" key="GridCell.Tab.0.right/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590244317937" />
@@ -276,7 +267,7 @@
     <state width="1579" height="217" key="GridCell.Tab.0.right/0.0.1600.860/1600.-165.1600.860@0.0.1600.860" timestamp="1590587065740" />
     <state width="1579" height="149" key="GridCell.Tab.0.right/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590681309482" />
     <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@0.0.1600.860" timestamp="1591118609684" />
-    <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591349416266" />
+    <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591354469267" />
     <state width="1579" height="140" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1591136489553" />
     <state width="1579" height="149" key="GridCell.Tab.1.bottom" timestamp="1591136489547">
       <screen x="0" y="0" width="1600" height="860" />
@@ -337,6 +328,10 @@
     <state x="609" y="-556" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/0.-900.1600.860@0.-900.1600.860" timestamp="1590161614428" />
     <state x="609" y="344" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/0.-900.1600.860@0.0.1600.860" timestamp="1590073165731" />
     <state x="2209" y="179" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.-165.1600.860@1600.-165.1600.860" timestamp="1590251386498" />
+    <state x="25" y="0" width="1400" height="679" maximized="true" key="dock-window-1" timestamp="1591353493575">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="25" y="0" width="1400" height="679" maximized="true" key="dock-window-1/0.0.1600.860/1600.0.1600.860@1600.0.1600.860" timestamp="1591353493575" />
     <state x="463" y="180" key="search.everywhere.popup" timestamp="1590421139164">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
